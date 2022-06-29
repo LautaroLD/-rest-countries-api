@@ -1,5 +1,6 @@
 @import '/node_modules/bootstrap/dist/css/bootstrap.css';
 @import '/node_modules/boxicons/css/boxicons.css';
+// node_modules\bootstrap\scss\bootstrap.scss
 @mixin respond-to ($width) {
     @media only screen and (max-width: $width) {
         @content;
