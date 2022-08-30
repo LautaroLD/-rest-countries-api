@@ -1,13 +1,13 @@
 {
-  "main.css": "/rest-countries-api/static/css/main.6a622d87.chunk.css",
-  "main.js": "/rest-countries-api/static/js/main.9ce0cc92.chunk.js",
-  "main.js.map": "/rest-countries-api/static/js/main.9ce0cc92.chunk.js.map",
-  "static/js/1.bbd595ee.chunk.js": "/rest-countries-api/static/js/1.bbd595ee.chunk.js",
-  "static/js/1.bbd595ee.chunk.js.map": "/rest-countries-api/static/js/1.bbd595ee.chunk.js.map",
+  "main.css": "/rest-countries-api/static/css/main.0db435ad.chunk.css",
+  "main.js": "/rest-countries-api/static/js/main.1b9f2276.chunk.js",
+  "main.js.map": "/rest-countries-api/static/js/main.1b9f2276.chunk.js.map",
+  "static/js/1.08cc3afb.chunk.js": "/rest-countries-api/static/js/1.08cc3afb.chunk.js",
+  "static/js/1.08cc3afb.chunk.js.map": "/rest-countries-api/static/js/1.08cc3afb.chunk.js.map",
   "runtime~main.js": "/rest-countries-api/static/js/runtime~main.774f18b0.js",
   "runtime~main.js.map": "/rest-countries-api/static/js/runtime~main.774f18b0.js.map",
-  "static/css/main.6a622d87.chunk.css.map": "/rest-countries-api/static/css/main.6a622d87.chunk.css.map",
+  "static/css/main.0db435ad.chunk.css.map": "/rest-countries-api/static/css/main.0db435ad.chunk.css.map",
   "index.html": "/rest-countries-api/index.html",
-  "precache-manifest.f3d24f2d6b980f018fdce52dbe74229e.js": "/rest-countries-api/precache-manifest.f3d24f2d6b980f018fdce52dbe74229e.js",
+  "precache-manifest.dc25fde5694b70d256dc2b54c4ca53f9.js": "/rest-countries-api/precache-manifest.dc25fde5694b70d256dc2b54c4ca53f9.js",
   "service-worker.js": "/rest-countries-api/service-worker.js"
 }
