@@ -1,0 +1,75 @@
+.dark-theme {
+
+    header {
+        background-color: $color-blue-soft;
+        color           : $color-light;
+
+        .header__theme-icon {
+            color       : $color-light;
+            border-color: $color-light;
+        }
+    }
+
+    main {
+        background-color: $color-blue-dark;
+        color           : $color-light;
+
+        #input::placeholder {
+            color: $color-light;
+        }
+
+        #input,
+        #select {
+            color           : $color-light;
+            background-color: $color-blue-soft;
+            border-bottom   : 1px solid $color-gray;
+        }
+
+        .countrys-container {
+            ul {
+                .country {
+                    background-color: $color-blue-soft;
+
+                    .btn-more-details {
+                        color: $color-light;
+
+                        &:hover {
+                            background-color: $color-gray-light;
+                            color           : $color-dark;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .card-header {
+        background-color: $color-blue-soft;
+
+    }
+
+    .card-body,
+    .card-content {
+        background-color: $color-blue-dark;
+        color           : $color-light;
+    }
+
+    .card-body {
+        &__border {
+            &-info {
+                p {
+                    &:hover {
+                        cursor          : pointer;
+                        background-color: $color-gray-light;
+                        color           : $color-dark;
+                    }
+                }
+            }
+        }
+
+        hr {
+            background-color: $color-light;
+        }
+    }
+}

@@ -11,9 +11,9 @@ function CountryContainer() {
     } = React.useContext(ReactContext)
 
     return (
-        <div className='countrys-container container p-0 h-auto'>
+        <section className='countrys-container'>
             {ItemsReady &&
-                <ul className='p-0 d-flex flex-wrap'>
+                <ul>
                     {searchedCountry.map(element => <CountryItem
                         flag={element.flag}
                         name={element.name}
@@ -24,21 +24,13 @@ function CountryContainer() {
                     />)}
                 </ul>
                 ||
-                <div className=' w-100 text-center my-4'>
+                <div className='loading'>
                     <p>Loading...</p>
-                    <div className="spinner-grow m-3 text-primary" role="status">
-                        <span className="visually-hidden"></span>
-                    </div>
-                    <div className="spinner-grow m-3 text-primary" role="status">
-                        <span className="visually-hidden"></span>
-                    </div>
-                    <div className="spinner-grow m-3 text-primary" role="status">
-                        <span className="visually-hidden"></span>
-                    </div>
+                    <i class='bx bx-loader bx-spin' ></i>
                 </div>
             }
-            {onModal && <OpenCard />}
-        </div>
+
+        </section>
     )
 }
 export default CountryContainer

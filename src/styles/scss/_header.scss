@@ -1,0 +1,26 @@
+header {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 10px;
+    z-index        : 0;
+
+    .header {
+        &__title {
+            font-size: $font-s-title;
+        }
+
+        &__theme-icon {
+            font-size    : $font-s-text;
+            color        : $color-gray;
+            border       : 1px solid $color-gray;
+            padding      : 5px 10px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $color-gray;
+                color           : $color-light;
+            }
+        }
+    }
+}

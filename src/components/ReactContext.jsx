@@ -70,7 +70,6 @@ function TodoProvider(props) {
         const elem = document.getElementById('root')
         elem.classList.toggle('dark-theme')
         event.target.classList.toggle('bxs-sun')
-        event.target.classList.toggle('text-white')
 
     }
     const OpenModal = (value) => {
@@ -79,6 +78,13 @@ function TodoProvider(props) {
         console.log(elementSelected);
         setElementModal(elementSelected[0])
         console.log(elementModal);
+    }
+    const page = document.querySelector('html')
+    if (onModal) {
+        page.style.overflowY = 'hidden'
+    } else {
+        page.style.overflowY = 'scroll'
+
     }
 
     return (

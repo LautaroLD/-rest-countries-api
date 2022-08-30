@@ -1,0 +1,11 @@
+@mixin respond-to ($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin respond-to-tablet () {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}

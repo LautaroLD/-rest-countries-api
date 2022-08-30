@@ -1,0 +1,94 @@
+.card-content {
+    position        : fixed;
+    top             : 0%;
+    overflow-y      : scroll;
+    max-height      : inherit;
+    margin          : auto;
+    width           : 100vw;
+    height          : 100vh;
+    background-color: $color-gray-light;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-header {
+        position        : sticky;
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+        top             : 0%;
+        z-index         : 100;
+        padding         : 10px 15px;
+        background-color: white;
+
+        &__title {
+            font-size: $font-s-title;
+        }
+
+        &__close {
+            font-size: $font-s-title;
+            padding  : 5px;
+        }
+    }
+
+    .card-body {
+
+        @include respond-to-tablet {
+            display              : grid;
+            grid-template-columns: 1fr 1fr;
+            padding              : 5%;
+        }
+
+        hr {
+
+            background-color: $color-dark;
+            border          : none;
+            height          : 1px;
+        }
+
+        &__img {
+            width     : 100%;
+            max-width : 500px;
+            border    : 1px solid $color-gray;
+            object-fit: contain;
+            place-self: center;
+        }
+
+        &__info {
+            place-self    : center;
+            display       : flex;
+            flex-direction: column;
+            gap           : 10px;
+            padding       : 15px;
+            font-size     : $font-s-text;
+        }
+
+        &__border {
+            &-title {
+                font-size: $font-s-title;
+            }
+
+            &-info {
+                display  : flex;
+                flex-wrap: wrap;
+                gap      : 15px;
+
+                p {
+                    font-size    : $font-s-text;
+                    border       : 1px solid $color-gray;
+                    border-radius: 10px;
+                    padding      : 10px;
+                    width        : fit-content;
+
+                    &:hover {
+                        cursor          : pointer;
+                        background-color: $color-gray;
+                        color           : $color-light;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.loading {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    p {
+        font-size  : $font-s-title;
+        font-weight: $font-w-b;
+    }
+
+    i {
+        font-size: $font-s-title;
+        margin   : 0%;
+    }
+}

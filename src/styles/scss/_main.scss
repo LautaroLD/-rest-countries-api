@@ -1,0 +1,93 @@
+main {
+    background-color: #ededed;
+    min-height      : 100vh;
+    padding         : 10px;
+    z-index         : 0;
+
+    .main__section {
+
+        &-search {
+            display: flex;
+            padding: 10px 0;
+            margin : 0 5%;
+
+            &-input {
+                border-radius: 15px;
+                overflow     : hidden;
+                font-size    : $font-s-text;
+                border       : none;
+                padding      : 10px;
+                width        : 100%;
+            }
+        }
+
+        &-select {
+            margin: 0 5% 30px;
+
+            &-item {
+                font-size       : $font-s-text;
+                border          : none;
+                border-bottom   : #000000 solid 1px;
+                background-color: transparent;
+                color           : $color-gray;
+                padding         : 5px;
+
+
+            }
+        }
+    }
+
+    .countrys-container {
+        ul {
+            display  : flex;
+            flex-wrap: wrap;
+            gap      : 20px;
+            margin   : 0 5%;
+
+            .country {
+                display         : flex;
+                flex-direction  : column;
+                margin          : auto;
+                width           : 325px;
+                border-radius   : 15px;
+                overflow        : hidden;
+                background-color: white;
+
+                &__text-container {
+                    display       : flex;
+                    flex-direction: column;
+                    gap           : 5px;
+                    padding       : 10px;
+
+                    h3 {
+                        font-size: $font-s-title;
+                    }
+
+                    p {
+                        font-size: $font-s-text;
+                    }
+                }
+
+                img {
+                    height: 180px;
+                }
+
+                .btn-more-details {
+                    font-size    : $font-s-text;
+                    color        : $color-dark;
+                    border       : 1px solid $color-gray;
+                    width        : fit-content;
+                    padding      : 10px;
+                    border-radius: 10px;
+                    margin       : 0 0 10px 10px;
+
+                    &:hover {
+                        background-color: $color-gray;
+                        color           : $color-light;
+                        cursor          : pointer;
+                    }
+                }
+            }
+        }
+    }
+}
