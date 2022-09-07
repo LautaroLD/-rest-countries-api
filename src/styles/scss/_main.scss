@@ -1,5 +1,5 @@
 main {
-    background-color: #ededed;
+    background-color: $color-gray-light;
     min-height      : 100vh;
     padding         : 10px;
     z-index         : 0;
@@ -22,14 +22,14 @@ main {
         }
 
         &-select {
-            margin: 0 5% 30px;
+            margin: 0 5% 10px;
 
             &-item {
                 font-size       : $font-s-text;
                 border          : none;
                 border-bottom   : #000000 solid 1px;
                 background-color: transparent;
-                color           : $color-gray;
+                color           : $color-blue-soft;
                 padding         : 5px;
 
 
@@ -38,7 +38,59 @@ main {
     }
 
     .countrys-container {
-        ul {
+        .loading {
+            &__icon {
+                background-image   : url('../assets/icons/bx-loader.svg');
+                background-size    : auto;
+                background-repeat  : no-repeat;
+                background-position: center;
+                height             : 40px;
+                width              : 40px;
+                animation          : 3s rotate linear infinite;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .list-pages {
+            display        : flex;
+            justify-content: center;
+            gap            : 2%;
+            margin         : 10px auto 20px;
+            list-style     : none;
+            max-width      : 550px;
+            flex-wrap: wrap;
+
+
+            .active {
+                background-color: $color-blue-soft;
+                color           : $color-light;
+            }
+
+
+            &__item {
+                color        : $color-blue-soft;
+                border-bottom: $color-blue-soft 1px solid;
+                font-size    : $font-s-text;
+                padding      : 5px;
+
+                &:hover {
+                    background-color: $color-gray;
+                    color           : $color-light;
+                    cursor          : pointer;
+                }
+            }
+        }
+
+        .list-countries {
             display  : flex;
             flex-wrap: wrap;
             gap      : 20px;
@@ -47,11 +99,17 @@ main {
             .country {
                 display         : flex;
                 flex-direction  : column;
-                margin          : auto;
-                width           : 325px;
+                margin          : 0 auto auto auto;
+                width           : 320px;
                 border-radius   : 15px;
                 overflow        : hidden;
                 background-color: white;
+
+                &__img {
+                    width : 320px;
+                    height: 160px;
+                    object-fit: contain;
+                }
 
                 &__text-container {
                     display       : flex;
@@ -59,7 +117,7 @@ main {
                     gap           : 5px;
                     padding       : 10px;
 
-                    h3 {
+                    h2{
                         font-size: $font-s-title;
                     }
 
@@ -68,18 +126,15 @@ main {
                     }
                 }
 
-                img {
-                    height: 180px;
-                }
-
                 .btn-more-details {
-                    font-size    : $font-s-text;
-                    color        : $color-dark;
-                    border       : 1px solid $color-gray;
-                    width        : fit-content;
-                    padding      : 10px;
-                    border-radius: 10px;
-                    margin       : 0 0 10px 10px;
+                    font-size       : $font-s-text;
+                    color           : $color-dark;
+                    border          : 1px solid $color-gray;
+                    width           : fit-content;
+                    padding         : 10px;
+                    border-radius   : 10px;
+                    margin          : 0 0 10px 10px;
+                    background-color: $color-light;
 
                     &:hover {
                         background-color: $color-gray;

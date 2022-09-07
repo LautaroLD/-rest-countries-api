@@ -4,7 +4,6 @@ import { ReactContext } from './ReactContext'
 function OpenCard() {
     const { setOnModal, elementModal, countries, setElementModal } = React.useContext(ReactContext)
     let currenciesToArray = Object.entries(elementModal.currencies)
-    let currencies = currenciesToArray[0][1].name
     let currenciesAll = currenciesToArray.map(element => { return element[1].name })
 
     const getBorderCountry = (borderElement) => {
@@ -21,10 +20,10 @@ function OpenCard() {
                 <h5 className="card-header__title">{elementModal.name}</h5>
                 <i onClick={() => {
                     setOnModal(false)
-                }} className=' bx bx-x card-header__close'></i>
+                }} className='card-header__close'></i>
             </div>
             <div className="card-body">
-                <img className='card-body__img' src={elementModal.flag} ></img>
+                <img alt={elementModal.name} className='card-body__img' src={elementModal.flag} ></img>
                 <div className=' card-body__info'>
                     <p><b>Population: </b>{elementModal.population}</p>
                     <p><b>region: </b>{elementModal.region}</p>

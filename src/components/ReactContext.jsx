@@ -7,7 +7,9 @@ function TodoProvider(props) {
     const [onModal, setOnModal] = React.useState(false)
     const [searchValue, setSearchValue] = React.useState('');
     const [searchByRegion, setSearchByRegion] = React.useState('');
+    const [ThemeDark, setThemeDark] = React.useState(false);
     const [elementModal, setElementModal] = React.useState([]);
+    const [page, setPage] = React.useState(0)
     let countries = []
     let searchedCountry = [];
     async function getCountry() {
@@ -32,6 +34,7 @@ function TodoProvider(props) {
                 })
                 localStorage.setItem('countrys', JSON.stringify(lista))
                 setItemsReady(true)
+
             })
             .catch(err => new Error(err))
     }
@@ -63,7 +66,6 @@ function TodoProvider(props) {
     }
 
     const onSearchByRegion = (event) => {
-        console.log(event.target.value);
         setSearchByRegion(event.target.value);
     }
     const changeTheme = (event) => {
@@ -75,18 +77,18 @@ function TodoProvider(props) {
     const OpenModal = (value) => {
         const elementSelected = countries.filter(element => element.name === value)
         setOnModal(true)
-        console.log(elementSelected);
         setElementModal(elementSelected[0])
-        console.log(elementModal);
     }
-    const page = document.querySelector('html')
-    if (onModal) {
-        page.style.overflowY = 'hidden'
-    } else {
-        page.style.overflowY = 'scroll'
-
+    const activePage = (event) => {
+        const clearClass = document.querySelector('.active')
+        if (clearClass) {
+            clearClass.classList.remove('active')
+        }
+        const item = event.target
+        const index = item.getAttribute('data-index')
+        item.classList.add('active')
+        setPage(index)
     }
-
     return (
         <ReactContext.Provider value={{
             ItemsReady,
@@ -100,7 +102,11 @@ function TodoProvider(props) {
             onModal,
             setOnModal,
             countries,
-            setElementModal
+            setElementModal,
+            ThemeDark,
+            setThemeDark,
+            activePage,
+            page
         }}>
             {props.children}
         </ReactContext.Provider>

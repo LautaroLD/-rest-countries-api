@@ -8,14 +8,14 @@ function CountryItem(props) {
 
     return (
         <li id='' className='country'>
-            <img className='country__img' src={props.flag} ></img>
+            <img alt={props.name} className='country__img' src={props.flag} ></img>
             <div className='country__text-container'>
-                <h3>{props.name}</h3>
+                <h2>{props.name}</h2>
                 <p><b>Population: </b>{props.population}</p>
                 <p><b>region: </b>{props.region}</p>
                 <p><b>Capital: </b>{props.capital}</p>
             </div>
-            <a onClick={() => OpenModal(props.name)} className='btn-more-details'>More details</a>
+            <button onClick={() => OpenModal(props.name)} className='btn-more-details'>More details</button>
         </li>
     )
 }

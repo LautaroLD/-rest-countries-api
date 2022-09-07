@@ -12,7 +12,7 @@ function Main() {
 
       <main id='main' className=' main'>
         <section className="main__section-search">
-          <input id='input' value={searchValue} onChange={onSearchValueChange} className="main__section-search-input" type="search" placeholder="Search" autoComplete='false' />
+          <input id='input' value={searchValue} onChange={onSearchValueChange} className="main__section-search-input" type="text" placeholder="Search" autoComplete='false' />
         </section>
         <section className='main__section-select'>
           <select id='select' onChange={onSearchByRegion} className='main__section-select-item' name="region" title='region'>

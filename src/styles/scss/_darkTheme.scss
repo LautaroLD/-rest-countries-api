@@ -5,8 +5,7 @@
         color           : $color-light;
 
         .header__theme-icon {
-            color       : $color-light;
-            border-color: $color-light;
+            filter      : invert(1);
         }
     }
 
@@ -26,12 +25,24 @@
         }
 
         .countrys-container {
-            ul {
+            .list-pages {
+                &__item {
+                    color       : $color-light;
+                    border-color: $color-light;
+
+                    &:hover {}
+                }
+            }
+
+            .list-countries {
                 .country {
                     background-color: $color-blue-soft;
 
                     .btn-more-details {
-                        color: $color-light;
+                        background-color: $color-blue-soft;
+                        color           : $color-light;
+                        border-color    : $color-light;
+                        font-weight     : $font-w-b;
 
                         &:hover {
                             background-color: $color-gray-light;
@@ -46,6 +57,10 @@
 
     .card-header {
         background-color: $color-blue-soft;
+
+        &__close {
+            filter: invert(1);
+        }
 
     }
 

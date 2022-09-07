@@ -1,13 +1,20 @@
+@font-face {
+    font-family: 'Roboto';
+    src        : url('../assets/fonts/roboto-regular.woff2') format('woff2'),
+        url('../assets/fonts/roboto-regular.woff') format('woff');
+    font-weight: 400;
+    font-style : normal;
+}
+
 $font-w-b    : 700;
 $font-w-l    : 400;
 $font-s-text : 1.5rem;
 $font-s-title: 3rem;
-$font-f      : 'Roboto',
-sans-serif;
+$font-f      : Roboto;
 
-$color-blue-dark       :  hsl(207, 26%, 17%);
-$color-blue-soft       :  hsl(208, 24%, 29%);
+$color-blue-dark  : hsl(207, 26%, 17%);
+$color-blue-soft  : hsl(208, 24%, 29%);
 $color-dark       : #000000;
 $color-light      : #ffffff;
-$color-gray-light :#eeeeee;
+$color-gray-light :#dfdfdf;
 $color-gray       :#7e7e7e;

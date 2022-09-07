@@ -6,9 +6,9 @@
 
 html {
     font-size  : 62.5%;
-    font-family: $font-f;
-
+    
     body {
+        font-family:$font-f;
         max-width: 100vw;
         min-width: 320px;
 
@@ -17,16 +17,5 @@ html {
                 display: none;
             }
         }
-    }
-
-    .modal-backdrop {
-        position        : absolute;
-        top             : 0%;
-        left            : 0%;
-        height          : 100vh;
-        width           : 100vw;
-        background-color: rgba(0, 0, 0, 0.623);
-        overflow        : hidden;
-        z-index         : 100;
     }
 }

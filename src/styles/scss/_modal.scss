@@ -7,28 +7,40 @@
     width           : 100vw;
     height          : 100vh;
     background-color: $color-gray-light;
+    z-index         : 100;
 
     &::-webkit-scrollbar {
         display: none;
     }
 
     .card-header {
-        position        : sticky;
-        display         : flex;
-        justify-content : space-between;
-        align-items     : center;
-        top             : 0%;
-        z-index         : 100;
-        padding         : 10px 15px;
-        background-color: white;
+        position           : sticky;
+        display            : flex;
+        justify-content    : space-between;
+        align-items        : center;
+        top                : 0%;
+        padding            : 10px 15px;
+        background-color   : white;
 
         &__title {
             font-size: $font-s-title;
         }
 
         &__close {
-            font-size: $font-s-title;
-            padding  : 5px;
+            background-image   : url('../assets/icons/bx-x.svg');
+            background-size    : auto;
+            background-repeat  : no-repeat;
+            background-position: center;
+            height             : 30px;
+            width              : 45px;
+            border             : 1px solid $color-gray;
+            padding            : 5px 10px;
+            border-radius      : 10px;
+
+            &:hover {
+                background-color   : $color-gray;
+                filter             : invert(1);
+            }
         }
     }
 
@@ -68,8 +80,9 @@
             &-title {
                 font-size: $font-s-title;
             }
-
+            
             &-info {
+                padding-bottom: 20px;
                 display  : flex;
                 flex-wrap: wrap;
                 gap      : 15px;
