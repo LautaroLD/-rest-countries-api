@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7b8f5a67fc679cde3577",
-    "url": "/rest-countries-api/static/css/main.f75723b6.chunk.css"
+    "revision": "eea8d90f5cbd34371145",
+    "url": "/rest-countries-api/static/css/main.37358733.chunk.css"
   },
   {
-    "revision": "7b8f5a67fc679cde3577",
-    "url": "/rest-countries-api/static/js/main.7b8f5a67.chunk.js"
+    "revision": "eea8d90f5cbd34371145",
+    "url": "/rest-countries-api/static/js/main.eea8d90f.chunk.js"
   },
   {
     "revision": "08cc3afb262cb45c5950",
@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/rest-countries-api/static/js/runtime~main.774f18b0.js"
   },
   {
-    "revision": "853809bc820f91a667659e50398c43fd",
-    "url": "/rest-countries-api/static/media/roboto-regular.853809bc.woff2"
-  },
-  {
     "revision": "b471ed5a98a370e4a234721008de724d",
     "url": "/rest-countries-api/static/media/roboto-regular.b471ed5a.woff"
+  },
+  {
+    "revision": "853809bc820f91a667659e50398c43fd",
+    "url": "/rest-countries-api/static/media/roboto-regular.853809bc.woff2"
   },
   {
     "revision": "da3355ada28b74694db56f8a5085b421",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/rest-countries-api/static/media/bx-loader.e57bfb1e.svg"
   },
   {
-    "revision": "bc69c7a33658dcd12b0b9b8d94e0c2fd",
+    "revision": "67ffbb39c20002efdf06a6dd73a34cbd",
     "url": "/rest-countries-api/index.html"
   }
 ];
